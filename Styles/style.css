@@ -44,11 +44,26 @@ a {
 .back-button a {
     display: inline-block;
     background-color: #95a5a6;
-    color: white;
-    text-decoration: none;
     padding: 10px 20px;
     border-radius: 6px;
     transition: background-color 0.3s ease;
+}
+
+.footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.content {
+    padding-bottom: 60px;
 }
 
 .back-button a:hover {
@@ -57,4 +72,5 @@ a {
 
 a:hover {
     background-color: #2176bd;
+    text-decoration: underline;
 }
