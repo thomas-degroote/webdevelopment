@@ -28,12 +28,19 @@ li {
 a {
     display: block;
     text-decoration: none;
-    background-color: #3498db;
     color: white;
     padding: 10px;
     border-radius: 6px;
     text-align: center;
     transition: background-color 0.3s ease;
+}
+
+.nav a{
+    background-color: #3498db;
+}
+
+.verslagen a {
+    background-color: #346087;
 }
 
 .back-button {
@@ -70,6 +77,10 @@ a {
     background-color: #7f8c8d;
 }
 
-a:hover {
+.nav a:hover {
     background-color: #2176bd;
+}
+
+.verslagen a:hover {
+    background-color: #214465;
 }
