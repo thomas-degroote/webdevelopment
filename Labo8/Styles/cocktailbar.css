@@ -52,9 +52,11 @@ h2 {
 #guarantee {
     border: dotted gray 2px;
     margin: 30px;
-    padding: 20px;
+    padding: 20px 20px 20px 80px;
     color: #444444;
     background-color: #a7cece;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
 }
 
 footer {
