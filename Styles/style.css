@@ -107,7 +107,7 @@ a:hover {
         font-size: 2rem;
     }
 
-    .nav a, .verslagen a {
+    .nav a, .verslagen a, .nav .disabled {
         margin: 0px 20px 0px 20px;
     }
 
