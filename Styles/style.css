@@ -45,6 +45,7 @@ ul {
     font-weight: 500;
     border: 1px solid #e5e5e7;
     transition: all 0.2s ease;
+    margin: 0 20px 0 20px;
 }
 
 .back-button a {
