@@ -1,0 +1,19 @@
+body {
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article:nth-child(2n+1) img {
+    float: left;
+}
+article:nth-child(2n) img {
+    float: right;
+}
+img {
+    margin: 0 10px 10px 10px;
+}
+article {
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
