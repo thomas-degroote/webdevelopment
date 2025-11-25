@@ -66,6 +66,7 @@ ul {
 a:hover {
     border-color: #1d1d1f;
     transform: translateY(-2px);
+    background-color: #f3f1f1;
 }
 
 .footer-bar {
