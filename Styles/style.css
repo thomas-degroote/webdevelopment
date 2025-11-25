@@ -45,7 +45,7 @@ ul {
     font-weight: 500;
     border: 1px solid #e5e5e7;
     transition: all 0.2s ease;
-    margin: 0 20px 0 20px;
+    /*margin: 0 20px 0 20px;*/
 }
 
 .back-button a {
@@ -81,6 +81,11 @@ a:hover {
     h1 {
         font-size: 2rem;
     }
+
+    .nav a, .verslagen a {
+        margin: 0px 20px 0px 20px;
+    }
+
 
     ul {
         grid-template-columns: 1fr;
