@@ -24,7 +24,7 @@ h1 {
 .nav,
 .verslagen {
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 auto 16px;
 }
 
 ul {
@@ -46,6 +46,31 @@ ul {
     border: 1px solid #e5e5e7;
     transition: all 0.2s ease;
     /*margin: 0 20px 0 20px;*/
+}
+
+.nav .disabled,
+.verslagen .disabled {
+    display: block;
+    padding: 16px;
+    background: #f3f3f3;
+    color: #8a8a8d;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid #d0d0d2;
+    cursor: no-drop;
+    max-height: 70px;
+    background: repeating-linear-gradient(
+            45deg,
+            #e0e0e0,
+            #e0e0e0 6px,
+            #f0f0f0 6px,
+            #f0f0f0 12px
+    );
+}
+
+p {
+    font-size: 10px;
 }
 
 .back-button a {
