@@ -51,6 +51,60 @@ header img {
     margin: 10px 10px 10px 10px;
 }
 
+.gallery {
+    background-color: #999999;
+    line-height: 0;
+}
+
+
+footer,
+.bottom {
+    grid-column: span 2;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+.bottom>div {
+    width: 200px;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.bottom a {
+    color: inherit;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+footer>p {
+    text-align: center;
+    background-color: white;
+}
+
+.foto {
+    display: inline-block;
+    border: 1px dotted white;
+    margin: 20px;
+}
+
+.foto>img {
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    box-sizing: border-box;
+}
+
+.gallery {
+    background-color: #999999;
+    line-height: 0;
+}
 
 main {
     width: 75%;
@@ -61,14 +115,46 @@ main {
     float: left;
     margin: 20px 20px 0px 20px;
 }
-.introduction {
-    background-color: white;
-    color: black;
+.introduction>p {
+    overflow: hidden;
     text-align: justify;
-    margin: 20px 30px 20px 0px;
+}
 
+.introduction {
+    padding: 20px;
 }
 
 p {
     margin-top: 0px;
+}
+
+footer,
+.bottom {
+    grid-column: span 2;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+
+.bottom>div {
+    width: 200px;
+    margin-left: 120px;
+    display: inline-block;
+}
+
+.bottom a {
+    color: inherit;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+footer>p {
+    text-align: center;
+    background-color: white;
 }
