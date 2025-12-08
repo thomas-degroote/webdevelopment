@@ -1,0 +1,10 @@
+.row div {
+    background-color: #abb1b8;
+    min-height: 100px;
+    margin-bottom: 20px;
+    background-clip: content-box;
+}
+
+.row div:nth-child(2n+1) {
+    background-color: #dbdfe5;
+}
