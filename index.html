@@ -1,15 +1,21 @@
 <!doctype html>
 <html lang="nl">
-<link rel="stylesheet" href="Styles/style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Web Development I</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Styles/index.css">
+        <title>Web Development I</title>
+    </head>
     <body>
-        <h1>Web Development I 🎄</h1>
-        <div class="nav">
-            <h2>Semester 1</h2>
+        <h1>Web Development I</h1>
+
+        <div class="semester-tabs">
+            <button class="tab-button active" onclick="showSemester(1)">Semester 1</button>
+            <button class="tab-button" onclick="showSemester(2)">Semester 2</button>
+        </div>
+
+        <div class="nav semester-1 active">
+        <!--    <h2>Semester 1</h2>-->
             <ul>
                 <li><a href="Labo2/labo2.html">Labo 2</a></li>
                 <li><a href="Labo3/labo3.html">Labo 3</a></li>
@@ -20,14 +26,44 @@
                 <li><a href="Labo8/labo8.html">Labo 8</a></li>
                 <li><a href="Labo9/labo9.html">Labo 9</a></li>
                 <li><a href="Labo10/labo10.html">Labo 10</a></li>
-                <li><a href="Labo10/labo11.html">Labo 11</a></li>
-                <li class="disabled">Labo 12<p>Binnenkort beschikbaar</p></li>
+                <li><a href="Labo11/labo11.html">Labo 11</a></li>
+                <li class="disabled">Labo 12<p>Niet beschikbaar</p></li>
             </ul>
         </div>
+
+        <div class="nav semester-2">
+        <!--    <h2>Semester 2</h2>-->
+            <ul>
+                <li><a href="Labo13/labo13.html">Labo 13</a></li>
+                <li class="disabled">Labo 14<p>Volgende week beschikbaar</p></li>
+                <!-- Voeg hier meer labo's toe wanneer beschikbaar -->
+            </ul>
+        </div>
+
         <div class="verslagen">
             <ul>
                 <li><a href="verslagen.html">Verslagen</a></li>
             </ul>
         </div>
+
+        <script>
+            function showSemester(semesterNumber) {
+                // Verberg alle semester secties
+                document.querySelectorAll('.nav').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Verwijder active class van alle tabs
+                document.querySelectorAll('.tab-button').forEach(button => {
+                    button.classList.remove('active');
+                });
+
+                // Toon geselecteerde semester
+                document.querySelector('.semester-' + semesterNumber).classList.add('active');
+
+                // Markeer geselecteerde tab
+                event.target.classList.add('active');
+            }
+        </script>
     </body>
 </html>
