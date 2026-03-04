@@ -5,9 +5,9 @@ const setup = () => {
     green = document.getElementById("green");
     blue = document.getElementById("blue");
 
-    rood.addEventListener("input", update);
-    green.addEventListener("input", update);
-    blue.addEventListener("input", update);
+    rood.addEventListener("change", update);
+    green.addEventListener("change", update);
+    blue.addEventListener("change", update);
 }
 
 const update = () => {
