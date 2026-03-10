@@ -29,3 +29,14 @@ const updateCalculations = () => {
 };
  
 window.addEventListener("load", setup);
+
+
+
+
+let leeftijd = 34; /* number */
+let intrest = 0.12; /* number */
+let isGevaarlijk=true; /* boolean */
+let vandaag = new Date(); /* object */
+const print = (message) => {  /* function */
+    console.log(message);
+}

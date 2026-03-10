@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+    <meta charset="UTF-8">
+    <title>Formulier</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Persoonlijke informatie</legend>
+                Voornaam*: <input type="text" name="voornaam" placeholder="Your first name"><br>
+                Familienaam*: <input type="text" name="familienaam" placeholder="Your last name">
+            </fieldset>
+
+            <fieldset>
+                <legend>Sport</legend>
+                <p>Welke sport beoefen je?</p>
+                <input type="checkbox" name="sport" value="lopen"> Lopen<br>
+                <input type="checkbox" name="sport" value="zwemmen"> Zwemmen<br>
+                <input type="checkbox" name="sport" value="roeien"> Roeien
+            </fieldset>
+
+            <fieldset>
+                <legend>Communicatievoorkeur</legend>
+                <p>Hoe kunnen we je bereiken?</p>
+                <input type="radio" name="communicatie" value="post"> Per post<br>
+                <input type="radio" name="communicatie" value="email"> E-mail
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorieten</legend>
+                Favoriete film: <input type="text" name="film"><br>
+                Favoriete quote: <textarea name="quote" placeholder="Schrijf je favoriete quote"></textarea><br>
+                Favoriete eten:
+                <select name="eten">
+                <option>Hamburger</option>
+                <option>Hot-dog</option>
+                <option>Pizza</option>
+                </select><br>
+                Favoriete browser: <input type="text" name="browser">
+            </fieldset>
+
+            <fieldset>
+                <legend>Beveiliging &amp; contact</legend>
+                Wachtwoord*: <input type="password" name="wachtwoord"><br>
+                E-mailadres: <input type="email" name="email" placeholder="Geef je e-mailadres in"><br>
+                Favoriete site: <input type="url" name="site" placeholder="Geef de URL van je favoriete site">
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra informatie</legend>
+                Favoriete getal tussen 1-10: <input type="number" name="getal1" min="1" max="10"><br>
+                Favoriete getal tussen 11-1000: <input type="range" name="getal2" min="11" max="1000"><br>
+                Wanneer ben je geboren? <input type="date" name="geboortedatum"><br>
+                Belgische postcode*: <input type="number" name="postcode" placeholder="9999">
+            </fieldset>
+
+            <fieldset>
+                <legend>Varia</legend>
+                Zoeken naar iets: <input type="search" name="zoeken"><br>
+                Wat is je lievelingskleur? <input type="color" name="kleur"><br>
+                <input type="file" name="bestand">
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
+
+
