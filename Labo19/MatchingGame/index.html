@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Spel</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Memory Spel</h1>
+
+    <div id="opties">
+        <label>
+            <input type="radio" name="aantal_kaarten" value="2" checked>
+            2 gelijke kaarten
+        </label>
+        <label>
+            <input type="radio" name="aantal_kaarten" value="3">
+            3 gelijke kaarten
+        </label>
+    </div>
+
+    <div id="slider-opties">
+        <label for="kaarten-slider">Aantal kaarten: </label>
+        <input type="range" id="kaarten-slider" min="2" max="10" value="6" step="1">
+        <span id="kaarten-waarde">6</span>
+    </div>
+
+    <button id="nieuw_game_btn">Nieuw spel</button>
+
+    <div id="speelveld"></div>
+    <div id="bericht"></div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
