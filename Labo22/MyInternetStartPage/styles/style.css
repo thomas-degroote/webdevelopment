@@ -1,0 +1,58 @@
+body {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.swatch {
+    display: inline-block;
+    height: auto;
+    width: 250px;
+    border-radius: 3px;
+    padding: 2px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    height: 35px;
+
+}
+
+#submitcommando {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    background-color: seagreen;
+    border: 1px;
+    border-radius: 3px;
+    color: white;
+}
+
+.swatch h2 {
+    color: white;
+    font-family: arial;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.swatch p {
+    color: white;
+    font-family: arial;
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.swatch button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
